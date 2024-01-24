@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title>Trang Chủ</title>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+    <main class="main">
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo-loren.png" alt="logo" id="logo" />
+                <div class="header-button">
+                    <img src="images/trang-chu.png" alt="trang chu" />
+                    <img src="images/nap-the.png" alt="nap the" />
+                </div>
+            </div>
+            <!-- Banner -->
+            <div class="banner">
+                <img src="images/le-hoi-mua-sam.png" alt="le hoi mua sam">
+                <img src="images/giang-sinh-an-lanh.png" alt="giang sinh an lanh">
+            </div>
+            <div class="banner-button">
+                <!-- The le -->
+                <button onclick="popup1()">
+                    <img src="images/the-le.png" alt="the le" data-aos="fade-right">
+                </button>
+                <!-- Tham gia -->
+                <button>
+                    <img src="images/tham-gia.png" alt="tham gia" data-aos="fade-left">
+                </button>
+            </div>
+
+            <div class="popup-1" id="popup-1">
+                <div class="popup-background-1"></div>
+                <div class="popup-content-1">
+                    <div class="close-popup-1">
+                        <button onclick="popup1()">
+                            <img src="images/close-icon.png" alt="">
+                        </button>
+                    </div>
+                    <img src="images/frame-the-le.png" alt="">
+                </div>
+            </div>
+        </header>
+        <!-- End-Header -->
+
+        <!-- Content -->
+            <!-- Reward -->
+            <div class="reward">
+                <div class="frame" data-aos="fade-down">
+                    <img src="images/khung-qua.png" alt="">
+                </div>
+                <div class="gift">
+                    <div class="gift-box" data-aos="flip-left" data-aos-delay="200" onclick="popup2()">
+                        <div id="gift-title">
+                            <h6>HỘP QUÀ 
+                                <br>ĐẤU GIÁ TOP 1</h6>
+                        </div>
+                        <img src="images/hop-qua.png" alt="">
+                        <div id="gift-content">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-aos="flip-left" data-aos-delay="300" onclick="popup2()">
+                        <div id="gift-title">
+                            <h6>HỘP QUÀ 
+                                <br>750.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua.png" alt="">
+                        <div id="gift-content">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-aos="flip-left" data-aos-delay="400" onclick="popup2()">
+                        <div id="gift-title">
+                            <h6>HỘP QUÀ 
+                                <br>300.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua.png" alt="">
+                        <div id="gift-content">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-aos="flip-left" data-aos-delay="500" onclick="popup2()">
+                        <div id="gift-title">
+                            <h6>HỘP QUÀ 
+                                <br>100.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua.png" alt="">
+                        <div id="gift-content">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-aos="flip-left" data-aos-delay="600" onclick="popup2()">
+                        <div id="gift-title">
+                            <h6>HỘP QUÀ 
+                                <br>50.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua.png" alt="">
+                        <div id="gift-content">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-2" id="popup-2">
+                    <div class="popup-background-2"></div>
+                    <div class="popup-content-2">
+                        <div class="close-popup-2">
+                            <button onclick="popup2()">
+                                <img src="images/close-icon.png" alt="">
+                            </button>
+                        </div>
+                        <img src="images/frame-phan-thuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reward-mobi">
+                <div class="frame-mobi">
+                    <img src="images/khung-qua.png" alt="">
+                </div>
+                <div class="carousel">
+                    <div class="carousel-item" onclick="popup3()">
+                        <div id="gift-title-mobi">
+                            <h6>HỘP QUÀ 
+                                <br>ĐẤU GIÁ TOP 1</h6>
+                        </div>
+                        <img src="images/hop-qua-mobi.png" alt="">
+                        <div id="gift-content-mobi">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" onclick="popup3()">
+                        <div id="gift-title-mobi">
+                            <h6>HỘP QUÀ 
+                                <br>750.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua-mobi.png" alt="">
+                        <div id="gift-content-mobi">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" onclick="popup3()">
+                        <div id="gift-title-mobi">
+                            <h6>HỘP QUÀ 
+                                <br>300.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua-mobi.png" alt="">
+                        <div id="gift-content-mobi">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" onclick="popup3()">
+                        <div id="gift-title-mobi">
+                            <h6>HỘP QUÀ 
+                                <br>100.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua-mobi.png" alt="">
+                        <div id="gift-content-mobi">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" onclick="popup3()">
+                        <div id="gift-title-mobi">
+                            <h6>HỘP QUÀ 
+                                <br>50.000 KC</h6>
+                        </div>
+                        <img src="images/hop-qua-mobi.png" alt="">
+                        <div id="gift-content-mobi">
+                            <p>XEM NGAY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-3" id="popup-3">
+                    <div class="popup-background-3"></div>
+                    <div class="popup-content-3">
+                        <div class="close-popup-3">
+                            <button onclick="popup3()">
+                                <img src="images/close-icon.png" alt="">
+                            </button>
+                        </div>
+                        <img src="images/frame-phan-thuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End-Reward -->
+
+            <!-- Ranking -->
+            <div class="ranking">
+                <img src="images/bang-xep-hang.png" alt="bang xep hang" >
+                <div id="ranking-content">
+                    <p>Nhân vật</p>
+                    <p>Máy chủ</p>
+                    <p>1000000</p>
+                </div>
+            </div>
+            <!-- End-Ranking -->
+        <!-- End-Content -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-image">
+                <img src="images/logo-loren.png" alt="footer logo" id="footer-logo">
+                <div class="footer-content">
+                    <h6>Công ty Cổ phần ADNX</h6>
+                    <p>
+                        Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số: 224/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/04/2021
+                        <br>Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số: 1963/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 28/10/2022
+                        <br>Copyright © 2022 ADNX
+                    </p>    
+                </div>
+                <img src="images/adnx-logo.png" alt="footer adnx logo" id="footer-adxn">
+            </div>
+            
+        </footer>
+        <!-- End-Footer -->
+    </main>
+
+    
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
