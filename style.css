@@ -6,15 +6,21 @@
     box-sizing: border-box;
     margin: 0;
 }
-.main {
+body {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
     object-fit: cover;
-    display: grid;
 }
-
+.main {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+.content {
+    width: 1440px;
+}
 /*-- Header --*/
 .logo {
     justify-content: center;
@@ -67,7 +73,7 @@
 }
 .banner-button img {
     cursor: pointer;
-    width: 30%;
+    width: 20%;
     object-fit: cover;
 }
 .banner-button img:hover {
@@ -383,6 +389,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 35px;
+    width: 100%;
 }
 #footer-logo {
     width: 15%;
