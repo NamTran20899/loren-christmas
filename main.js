@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
         // options
         imagesLoaded: true,
         contain: true,
-        groupCells: 2,
+        groupCells: 3,
         freeScroll: true,
         wrapAround: true,
         imagesLoaded: true,

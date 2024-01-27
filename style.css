@@ -10,7 +10,8 @@
     background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     display: grid;
 }
 
@@ -38,10 +39,7 @@
     width: 15%;
     height: 15%;
     cursor: pointer;
-}
-.header-button img:hover {
-    width: 17%;
-    height: 17%;
+    object-fit: cover;
 }
 /*-- Banner --*/
 .banner {
@@ -51,9 +49,11 @@
 }
 .banner img:first-child {
     width: 65%;
+    object-fit: cover;
 }
 .banner img:last-child {
     width: 100%;
+    object-fit: cover;
 }
 .banner-button {
     display: flex;
@@ -66,8 +66,8 @@
 }
 .banner-button img {
     cursor: pointer;
-    z-index: 0;
     width: 100%;
+    object-fit: cover;
 }
 .banner-button img:hover {
     animation: heartBeat; 
@@ -117,6 +117,7 @@
 }
 .popup-content-1 img {
     width: 100%;
+    object-fit: cover;
 }
 /*-- Reward --*/
 .reward {
@@ -126,14 +127,14 @@
 }
 .frame img {
     width: 95vw;
-    height: 100%;
+    object-fit: cover;
 }
 .gift {
     display: flex;
     gap: 5%;
     position: absolute;
     top: 27%;
-    width: 90%;
+    width: 90vw;
 }
 .gift div {
     display: flex;
@@ -149,6 +150,7 @@
 }
 .gift img {
     width: 115%;
+    object-fit: cover;
 }
 #gift-title {
     position: absolute;
@@ -182,6 +184,7 @@
     position: absolute;
     bottom: 25%;
 }
+
 .reward-mobi {
     justify-content: center;
     position: relative;
@@ -190,30 +193,34 @@
 }
 .frame-mobi img {
     width: 95vw;
-    height: 550px;
+    object-fit: cover;
 }
 .carousel {
     position: absolute;
-    width: 90%;
+    width: 90vw;
     top: 30%;
+}
+.flickity-slider {
+    width: 60% !important;
 }
 .carousel-item {
     width: 33%;
-    margin-right: 2rem;
+    margin-right: 1rem;
     position: relative;
 }
 .carousel-item img {
     width: 100%;
+    object-fit: cover;
 }
 #gift-title-mobi {
     position: absolute;
-    top: 26%;
+    top: 25%;
     width: 100%;
     z-index: 1;
 }
 #gift-content-mobi {
     position: absolute;
-    bottom: 26%;
+    bottom: 25%;
     width: 100%;
     z-index: 1;
 }
@@ -221,7 +228,7 @@
     color: #F5E7B6;
     text-align: center;
     font-family: "UTM Alberta Heavy";
-    font-size: 20px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 800;
     line-height: 128.211%;
@@ -230,7 +237,7 @@
     color: #FFC600;
     text-align: center;
     font-family: "UTM Alberta Heavy";
-    font-size: 25px;
+    font-size: 18px;
     font-style: normal;
     font-weight: bolder;
     line-height: 128.211%;
@@ -281,6 +288,7 @@
 }
 .popup-content-3 img {
     width: 100%;
+    object-fit: cover;
 }
 /*-- Gift Popup --*/ 
 .popup-2 .popup-background-2 {
@@ -326,6 +334,7 @@
 }
 .popup-content-2 img {
     width: 100%;
+    object-fit: cover;
 }
 /*-- Ranking --*/
 .ranking {
@@ -336,14 +345,25 @@
 }
 .ranking img {
     width: 90%;
+    object-fit: cover;
 }
 #ranking-content {
     position: absolute;
     display: flex;
-    width: 50%;
-    top: 20.5%;
-    right: 19%;
-    gap: 30%;
+    width: 85%;
+    top: 21%;
+}
+#rank {
+    width: 19.5%;
+}
+#name {
+    width: 26%;
+}
+#server {
+    width: 23%;
+}
+#point {
+    width: 31%;
 }
 #ranking-content  p {
     color: #FFF;
@@ -406,45 +426,22 @@ footer {
     text-shadow: 0 0 1px #000;
 }  
 @-webkit-keyframes snowflakes-fall {
-    0% {
-      top: -10%
-    } 
-    100% {
-      top: 100%
-    }
+    0% { top: -10% } 
+    100% { top: 100% }
 }
 @-webkit-keyframes snowflakes-shake {
-    0% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px)
-    } 
-    50% {
-      -webkit-transform: translateX(80px);
-      transform: translateX(80px)
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px)
-    }
+    0% { -webkit-transform: translateX(0px); transform: translateX(0px) } 
+    50% { -webkit-transform: translateX(80px); transform: translateX(80px) }
+    100% { -webkit-transform: translateX(0px); transform: translateX(0px) }
 }
 @keyframes snowflakes-fall {
-    0% {
-      top: -10%
-    } 
-    100% {
-      top:100%
-    }
+    0% { top: -10% } 
+    100% { top:100% }
 }
 @keyframes snowflakes-shake {
-    0% {
-      transform:translateX(0px)
-    } 
-    50% {
-      transform:translateX(80px)
-    } 
-    100% {
-      transform:translateX(0px)
-    }
+    0% { transform:translateX(0px) } 
+    50% { transform:translateX(80px) } 
+    100% { transform:translateX(0px) }
 }
 .snowflake {
     position: fixed;
@@ -521,12 +518,8 @@ footer {
     #gift-title h6 {
         font-size: 20px;
     }
-    #ranking-content p {
-        font-size: 20px;
-    }
     #ranking-content {
-        width: 55%;
-        right: 15%;
+        top: 20%;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -535,14 +528,6 @@ footer {
     }
     #gift-content p {
         font-size: 20px;
-    }
-    #ranking-content p {
-        font-size: 15px;
-    }
-    #ranking-content {
-        width: 55%;
-        right: 15%;
-        top: 21%;
     }
     .footer-content h6 {
         font-size: 20px;
@@ -573,16 +558,11 @@ footer {
     .footer-content p {
         line-height: 35px;
     }
+    #ranking-content p {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 750px) {
-    #ranking-content p {
-        font-size: 15px;
-    }
-    #ranking-content {
-        top: 20.5%;
-        right: 14%;
-        gap: 25%;
-    }
     .footer-content h6 {
         font-size: 12px;
     }
@@ -607,11 +587,8 @@ footer {
         top: 5%;
         right: 9%;
     }
-    #gift-title-mobi h6 {
+    #ranking-content p {
         font-size: 18px;
-    }
-    #gift-content-mobi p {
-        font-size: 20px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -623,23 +600,17 @@ footer {
         width: 17%;
         height: 17%;
     }
-    #ranking-content {
-        width: 60%;
-        right: 10%;
-        top: 20%;
-        gap: 20%;
-    }
     #gift-title-mobi h6 {
-        font-size: 15px;
+        font-size: 10px;
     }
     #gift-content-mobi p {
-        font-size: 20px;
-    }
-    .frame-mobi img {
-        height: 450px;
+        font-size: 15px;
     }
     .footer-content {
         margin-top: 70px;
+    }
+    #ranking-content p {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -650,18 +621,6 @@ footer {
     .header-button img {
         width: 20%;
         height: 20%;
-    }
-    #gift-title-mobi h6 {
-        font-size: 13px;
-    }
-    #gift-content-mobi p {
-        font-size: 18px;
-    }
-    .frame-mobi img {
-        height: 400px;
-    }
-    #ranking-content p {
-        font-size: 13px;
     }
     .footer-content {
         margin-top: 50px;
@@ -675,26 +634,29 @@ footer {
     .close-popup-3 button {
         right: 13%;
     }
+    #gift-title-mobi h6 {
+        font-size: 8px;
+    }
+    #gift-content-mobi p {
+        font-size: 12px;
+    }
+    #ranking-content p {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 450px) {
     #gift-title-mobi h6 {
-        font-size: 12px;
+        font-size: 7px;
     }
     #gift-content-mobi p {
-        font-size: 15px;
-    }
-    .frame-mobi img {
-        height: 300px;
-    }
-    #ranking-content p {
-        font-size: 13px;
+        font-size: 8px;
     }
     .footer-content {
         margin-top: 50px;
     }
     .flickity-prev-next-button {
-        width: 32px !important;
-        height: 32px !important;
+        width: 28px !important;
+        height: 28px !important;
     }
     .popup-content-1 img, .popup-content-3 img  {
         width: 60%;
@@ -702,25 +664,19 @@ footer {
     .close-popup-1 button {
         right: 18%;
     }
-    #gift-title-mobi {
-        top: 24% !important;
-    }
     .close-popup-3 button {
         right: 18%;
+    }
+    #ranking-content p {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 400px) {
     #gift-title-mobi h6 {
-        font-size: 10px;
+        font-size: 6px;
     }
     #gift-content-mobi p {
-        font-size: 15px;
-    }
-    .frame-mobi img {
-        height: 250px;
-    }
-    #ranking-content p {
-        font-size: 10px;
+        font-size: 9px;
     }
     .footer-content {
         margin-top: 50px;
@@ -734,32 +690,23 @@ footer {
     .close-popup-3 button {
         right: 20%;
     }
-    #gift-title-mobi {
-        top: 25% !important;
+    #ranking-content p {
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 350px) {
-    #gift-title-mobi {
-        top: 26% !important;
-    }
     #gift-title-mobi h6 {
-        font-size: 8px;
+        font-size: 4px;
     }
     #gift-content-mobi p {
-        font-size: 12px;
-    }
-    .frame-mobi img {
-        height: 225px;
-    }
-    #ranking-content p {
-        font-size: 10px;
+        font-size: 5px;
     }
     .footer-content {
         margin-top: 50px;
     }
     .flickity-prev-next-button {
-        width: 30px !important;
-        height: 30px !important;
+        width: 24px !important;
+        height: 24px !important;
     }
     .popup-content-1 img, .popup-content-3 img {
         width: 50%;
@@ -769,5 +716,8 @@ footer {
     }
     .close-popup-3 button {
         right: 23%;
+    }
+    #ranking-content p {
+        font-size: 8px;
     }
 }
