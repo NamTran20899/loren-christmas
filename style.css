@@ -35,6 +35,10 @@
     gap: 2%;
     width: 100%;
 }
+.header-button img:hover {
+    animation: heartBeat; 
+    animation-duration: 2s;
+}
 .header-button img {
     width: 15%;
     height: 15%;
@@ -57,16 +61,13 @@
 }
 .banner-button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20%;
-}
-.banner-button button {
-    border: none;
-    background: none;
+    gap: 10%;
 }
 .banner-button img {
     cursor: pointer;
-    width: 100%;
+    width: 30%;
     object-fit: cover;
 }
 .banner-button img:hover {
